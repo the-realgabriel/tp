@@ -37,11 +37,19 @@ button{
   position:absolute;
   left:0;
   background-color: rgb(243, 243, 243);
-  height: 99vh;
+  height: 90vh;
   color:black;
   padding: 10px;
-  border: 1px solid black;
   margin: 0;
+}
+
+.mid{
+  justify-content: center;
+  position:absolute;
+  border: 5px solid black;
+  left:25px;
+  background-color: black;
+  color: white;
 }
 
 

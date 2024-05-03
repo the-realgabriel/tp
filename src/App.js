@@ -15,10 +15,14 @@ function App() {
              <input placeholder='To where?'></input>
              <button onClick={console.log(('HEllo world'))}>Search</button>
          </div>
-          <div>
+          <div placeholder="mid" >
             <h1>Drivers Online</h1>
-             <input placeholder='Search'></input>
+             <input placeholder='Recent'></input>
              <button>FIlter</button>
+             <div>
+              <h3>Olamide</h3>
+              <h3></h3>
+             </div>
              <Profile/>
              
          </div>
