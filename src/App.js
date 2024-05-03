@@ -1,6 +1,5 @@
 import React from 'react';
 import './App.css';
-import Profile from './profile';
 
 function App() {
   return (
@@ -15,16 +14,14 @@ function App() {
              <input placeholder='To where?'></input>
              <button onClick={console.log(('HEllo world'))}>Search</button>
          </div>
-          <div placeholder="mid" >
+          <div className="mid" >
             <h1>Drivers Online</h1>
              <input placeholder='Recent'></input>
              <button>FIlter</button>
-             <div>
-              <h3>Olamide</h3>
-              <h3></h3>
+             <div className='driver'>
+              <script src=''>
+              </script>
              </div>
-             <Profile/>
-             
          </div>
       
 
