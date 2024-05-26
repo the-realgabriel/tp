@@ -14,7 +14,7 @@ return(
             <input placeholder="Password" type="password"/>
             <label>Confirm Password</label>
             <input placeholder="Confirm Password" type="password"/>
-                    <Link to='/'>
+                    <Link to='/home'>
                     <button>Register</button>
                     </Link>
             

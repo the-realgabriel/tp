@@ -17,10 +17,10 @@ function Driver(){
                 <input placeholder="Password" type="password"/>
                 <label>Confirm Password</label>
                 <input placeholder="Confirm Password" type="password"/>
-                    <Link to='/'>
+                    <Link to='/home'>
                     <button>Register</button>
                     </Link>   
-                    <Link to='/login'>
+                    <Link to='/'>
                     <button>Login</button>
                     </Link>  
         </form>

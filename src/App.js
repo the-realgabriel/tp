@@ -17,15 +17,15 @@ function App() {
     <BrowserRouter>
     <div className='navigation'>
     <nav>
-        <Link to="/">Home</Link>
+        <Link to="/home">Home</Link>
         <Link to="/profile">Profile</Link>
       </nav>
     </div>
 
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path='/' element={<Login />}/>
+        <Route path="/home" element={<Home />} />
         <Route path="/profile" element={<Profile />} />
-        <Route path='/login' element={<Login />}/>
         <Route path='/std_reg' element={<Student />}/>
         <Route path='/drv_reg' element={<Driver />}/>
       </Routes>

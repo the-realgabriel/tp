@@ -12,7 +12,7 @@ function Login(){
             <input placeholder="Password" type="Password"/>
 
             <div>
-                <Link to= '/'>
+                <Link to= '/home'>
                     <button>Login</button>
                 </Link>
             </div>
