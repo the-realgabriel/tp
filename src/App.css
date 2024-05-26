@@ -62,6 +62,28 @@ body{
   color: black;
 }
 
+/* Navigation container styles */
+.navigation {
+  background-color: #333; /* Change background color as desired */
+  overflow: hidden; /* Clear floats */
+  padding: 10px 0; /* Add some padding */
+}
+
+/* Navigation link styles */
+.navigation Link {
+  float: left; /* Float links to the left */
+  display: block; /* Display links as blocks */
+  color: white; /* Text color */
+  text-align: center; /* Center-align text */
+  padding: 14px 16px; /* Padding around links */
+  text-decoration: none; /* Remove underline from links */
+}
+
+/* Link hover effect */
+.navigation Link:hover {
+  background-color: #ddd; /* Background color on hover */
+  color: black; /* Text color on hover */
+}
 
 
 
