@@ -5,7 +5,7 @@ import './style/login.css'
 function Login(){
     return(
         <div className="login-container">
-            <form>
+            <form action="get" method="">
             <h2>Username</h2>
             <input placeholder="Username" type="Text"/>
             <h2>Password</h2>

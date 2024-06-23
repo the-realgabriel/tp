@@ -4,23 +4,21 @@ import Home from './pages/home';
 import Login from './Auth/login';
 import Student from './Auth/std_reg';
 import Driver from './Auth/drv_reg';
+import Dash from './pages/driverdash';
 
 import Profile from './pages/profile';
-import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 
 
 
 function App() {
   return (
-    <div className="App"> 
+    <div className="App">
+   
     <BrowserRouter>
-    <div className='navigation'>
-    <nav>
-        <Link to="/home">Home</Link>
-        <Link to="/profile">Profile</Link>
-      </nav>
-    </div>
+
+    
 
       <Routes>
         <Route path='/' element={<Login />}/>
@@ -28,6 +26,7 @@ function App() {
         <Route path="/profile" element={<Profile />} />
         <Route path='/std_reg' element={<Student />}/>
         <Route path='/drv_reg' element={<Driver />}/>
+        <Route path='/dash' element={<Dash/>}/>
       </Routes>
     </BrowserRouter>
 

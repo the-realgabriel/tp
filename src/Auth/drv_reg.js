@@ -6,7 +6,7 @@ function Driver(){
     return(
     <div className="login-container">
             <h1>Driver Registration</h1>
-        <form method="post">
+        <form action='post' method="">
                 <label>First Name</label>
                 <input placeholder="First Name" type="text"/>
                 <label>Last Name</label>
@@ -17,7 +17,7 @@ function Driver(){
                 <input placeholder="Password" type="password"/>
                 <label>Confirm Password</label>
                 <input placeholder="Confirm Password" type="password"/>
-                    <Link to='/home'>
+                    <Link to='/dash'>
                     <button>Register</button>
                     </Link>   
                     <Link to='/'>

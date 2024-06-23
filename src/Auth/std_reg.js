@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 function Student(){
 return(
     <div className="login-container">
-        <form method="post">
+        <form action="post" method="">
             <label>First Name</label>
             <input placeholder="First Name" type="text"/>
             <label>Last Name</label>

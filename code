@@ -1,0 +1,48 @@
+     <div className='buttombar div-at-bottom'>
+       <input placeholder='From where?'></input>
+       <input placeholder='To where?'></input>
+       <a href=''><button onClick={console.log(('HEllo world'))}>Search</button></a>
+   </div>
+    <div className="mid" >
+      <h1>Drivers Online</h1>
+       <input placeholder='Recent'></input>
+       <button>FIlter</button>
+       <div className='driver'>
+        <script src=''>
+        </script>
+        </div>
+      <h1>Active Trips</h1>
+   
+    </div>
+    <div className='trip'>
+    
+    <p>OrderID: </p>
+    <p>Currnt location: </p>
+    <p>Destination: </p> 
+    <div>Status</div>
+     </div>
+      <h2>Previous Trips</h2>
+     <div className='trip1'>
+    
+    <p>OrderID: </p>
+    <p>Currnt location: </p>
+    <p>Destination: </p> 
+    <div>Status</div>
+     </div>
+     <div className='trip2'>
+    
+    <p>OrderID: </p>
+    <p>Currnt location: </p>
+    <p>Destination: </p> 
+    <div>Status</div>
+     </div>
+    
+
+    <div className='info'>
+        <div className='driver_data'>
+        <h1>{user.name}</h1>
+      <p>Driver Name: {user.name}</p>
+      <p>Phone Number: {user.phone}</p>
+      <p>Car ID: {user.car}</p>
+        </div>
+     </div>
