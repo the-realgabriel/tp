@@ -4,6 +4,7 @@ import '../App.css';
 import { useParams } from 'react-router-dom';
 
 import { Link } from "react-router-dom";
+import MapView from './map';
 
 const MyContent = () => {
   // ... your navigation content here
@@ -67,7 +68,9 @@ function Home() {
     <div>Status</div>
      </div>
     
-
+<div className='Map'>
+  <MapView/>
+</div>
     <div className='info'>
         <div className='driver_data'>
         <h1>{user.name}</h1>
