@@ -1,29 +1,63 @@
 
 import { Link } from "react-router-dom";
+import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
+import axios from 'axios';
+
+const Driver = () => {
+  const[email, setEmail] = useState('')
+  const [password, setPassword] = useState('');
+  const [firstname, setFirstname] = useState('')
+  const [lastname , setLastname] = useState('')
+  const [error, setError] = useState('');
+  const navigate = useNavigate();
+
+  const handleRegister = async (event) => {
+    event.preventDefault();
+    setError('');
+
+    try {
+      const response = await axios.post('http://127.0.0.1:8090/api/collections/Driver/records', {
+        fiestname: firstname,
+        lastname: lastname,
+        email: email,
+        password: password,
+        passwordConfirm: password,
+      });
+
+      if (response.data) {
+        alert('Registration successful!');
+        // Redirect to login
+        navigate('/dash');
+      }
+    } catch (err) {
+      setError('Registration failed');
+    }
+  };
 
 
-function Driver(){
+
     return(
     <div className="login-container">
             <h1>Driver Registration</h1>
-        <form action='post' method="">
+        <form onSubmit={handleRegister}>
                 <label>First Name</label>
-                <input placeholder="First Name" type="text"/>
+                <input placeholder="First Name" type="text" value={firstname} onChange={(e) => setFirstname(e.target.value)}/>
                 <label>Last Name</label>
-                <input placeholder="Last Name" type="text"/>
+                <input placeholder="Last Name" type="text"  value={lastname} onChange={(e) => setLastname(e.target.value)}/>
                 <label>Email</label>
-                <input placeholder="Email" type="text"/>
+                <input placeholder="Email" type="text"  value={email} onChange={(e) => setEmail(e.target.value)}/>
                 <label>Password</label>
-                <input placeholder="Password" type="password"/>
+                <input placeholder="Password" type="password"  value={password} onChange={(e) => setPassword(e.target.value)}/>
                 <label>Confirm Password</label>
-                <input placeholder="Confirm Password" type="password"/>
-                    <Link to='/dash'>
-                    <button>Register</button>
-                    </Link>   
+                <input placeholder="Confirm Password" type="password"  value={password} onChange={(e) => setPassword(e.target.value)}/>
+                   
+                    <button type="submit">Register</button> 
                     <Link to='/'>
                     <button>Login</button>
                     </Link>  
         </form>
+        {error && <p style={{color: 'red'}}>{error}</p>}
     </div>
     );
 }

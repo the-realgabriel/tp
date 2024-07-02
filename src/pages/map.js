@@ -16,12 +16,11 @@ let DefaultIcon = L.icon({
 L.Marker.prototype.options.icon = DefaultIcon;
 
 const MapView = () => {
-  const position = [51.505, -0.09]; // Default position [latitude, longitude]
+  const position = [7.8632005, 4.4569892]; // Default position [latitude, longitude]
 
   return (
     <div className="map-view">
-      <h1>Map View</h1>
-      <MapContainer center={position} zoom={13} scrollWheelZoom={false} style={{ height: '500px', width: '100%' }}>
+      <MapContainer center={position} zoom={13} scrollWheelZoom={false} style={{ height: '560px', width: '100%' }}>
         <TileLayer
           url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
           attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'

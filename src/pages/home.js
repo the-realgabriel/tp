@@ -5,23 +5,15 @@ import { useParams } from 'react-router-dom';
 
 import { Link } from "react-router-dom";
 import MapView from './map';
-
-const MyContent = () => {
-  // ... your navigation content here
-  return (
-    <ul>
-
-    </ul>
-  );
-};
-
+import axios from 'axios';
 function Home() {
 
   const { userId } = useParams();
+  const [OrderID, setOrderID] = useState();
   const [user, setUser] = useState({});
 
   useEffect(() => {
-    fetch(`/api/users/${userId}`)
+    axios.get('')
       .then(response => response.json())
       .then(data => setUser(data))
       .catch(error => console.error('Error fetching user:', error));
@@ -62,27 +54,28 @@ function Home() {
      </div>
      <div className='trip2'>
     
-    <p>OrderID: </p>
-    <p>Currnt location: </p>
-    <p>Destination: </p> 
+    <p id='prv_order'>OrderID: </p>
+    <p id='prv_loc'>Currnt location: </p>
+    <p id='prv_dest'>Destination: </p> 
     <div>Status</div>
      </div>
     
-<div className='Map'>
-  <MapView/>
-</div>
+
     <div className='info'>
         <div className='driver_data'>
         <h1>{user.name}</h1>
-      <p>Driver Name: {user.name}</p>
-      <p>Phone Number: {user.phone}</p>
+      <p id='drv_name'>Driver Name: {user.name}</p>
+      <p id=''>Phone Number: {user.phone}</p>
       <p>Car ID: {user.car}</p>
         </div>
      </div>
+     <div className='Map'>
+        <MapView/>
+      </div>
      <div className='profile'>
       <Link to= '/profile'>
       
-      <button onClick={console.log(('HEllo world'))} className='profile'>Profile</button>      </Link>
+      <button onClick={console.log(('HEllo world'))} className='profile'>P</button>      </Link>
      
      </div>
     </div>

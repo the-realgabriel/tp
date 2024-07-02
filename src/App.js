@@ -5,6 +5,7 @@ import Login from './Auth/login';
 import Student from './Auth/std_reg';
 import Driver from './Auth/drv_reg';
 import Dash from './pages/driverdash';
+import DrvLogin from './Auth/drv_login';
 
 import Profile from './pages/profile';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
@@ -21,6 +22,7 @@ function App() {
     
 
       <Routes>
+        <Route path='/drv_login' element={<DrvLogin/>}/>
         <Route path='/' element={<Login />}/>
         <Route path="/home" element={<Home />} />
         <Route path="/profile" element={<Profile />} />

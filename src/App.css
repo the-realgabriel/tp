@@ -140,30 +140,33 @@ h1{
   color: black;
   border-radius: 10px;
   width: 500px;
+  display: flex;
+  z-index: 2;
 }
 
-.nav{
-  height:100%;
-  width: 100px;
-  background-color: blue;
-}
+.Map{
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 72%;
+  height: 100%;
+  z-index: 1;
+  }
+
+
 
 @media only screen and (max-width: 1080px) {
   body {
     font-size: 14px;
   }
 }
-botton.profile{
-  right: 1200px;
+button.profile{
+  justify-content: center;
+  position:absolute;
+  right: 1310px;
+  bottom: 580px;
+  border-radius: 100%;
+  color: black;
+ 
 }
 
-.Map{
-  width: 80%;
-  max-width: 800px;
-  height: 500px;
-  margin-top: 20px;
-  border: 2px solid #ddd;
-  border-radius: 8px;
-  overflow: hidden;
-  left: 0px;
-}

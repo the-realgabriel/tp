@@ -10,7 +10,7 @@ const Dashboard = () => {
 
   useEffect(() => {
     // Replace with your data fetching logic
-    axios.get('https://api.example.com/payments')
+    axios.get('https://127.0.0.1:8090/api/collections/logistics/records')
       .then(response => {
         setData(response.data);
         setLoading(false);

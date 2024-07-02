@@ -6,7 +6,7 @@ import './style/login.css';
 
 
 
-const Login = () => {
+const DrvLogin = () => {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
@@ -17,7 +17,7 @@ const Login = () => {
     setError('');
     
     try {
-      const response = await axios.post('http://127.0.0.1:8090/api/collections/student/auth-with-password', {
+      const response = await axios.post('http://127.0.0.1:8090/api/collections/Driver/auth-with-password', {
         identity: username,
         password: password,
       });
@@ -55,13 +55,12 @@ const Login = () => {
             {error && <p style={{color: 'red'}}>{error}</p>}
              <div>
                 <h3>Don't have an account ?</h3>
-                <Link to='/std_reg'>
-                    <button>User Signup</button>                
+                <Link to='/drv_reg'>
+                    <button>Driver signup</button>
                 </Link>
-
-                <h3>Login as driver</h3>
-                <Link to= '/drv_login'>
-                  <button>Driver Login</button>
+                <h3> Not a Driver ?</h3>
+                <Link to ='/'>
+                    <button>User Login</button>
                 </Link>
              </div>
         </div>
@@ -70,6 +69,6 @@ const Login = () => {
 
 }
 
-export default Login;
+export default  DrvLogin;
 
 
