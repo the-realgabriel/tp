@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { Bar } from 'react-chartjs-2';
 import 'chart.js/auto';
-import './dash.css';
+
 
 const Dashboard = () => {
   const [data, setData] = useState([]);
@@ -46,7 +46,7 @@ const Dashboard = () => {
           <h2>Total Revenue made</h2>
           <p>${totalRevenue.toFixed(2)}</p>
         </div>
-        <div className="metric">
+        <div className="metric_2">
           <h2>Total Transactions done</h2>
           <p>{totalTransactions}</p>
         </div>

@@ -8,18 +8,6 @@ body{
   padding: 0;
 }
 
-.buttombar{
-  display: flex;
-  justify-content: center;
-  position: inherit;
-  margin-top: 30px;
-  background-color: black;
-  position: absolute;
-  bottom: 0px;
-  left: 0;
-  right: 0;
-}
-
 input{
   border-radius: 10px;
   border: 1px solid black;
@@ -28,14 +16,23 @@ input{
   width: 10px;
   right: 10px;
 
+}input.where_to{
+  border-radius: 10px;
+  border: 1px solid black;
+  position: relative;
+  justify-content: center;
+  width: 10px;
+  right: 10px;
 }
+
+
 
 button{
   border-radius: 10px;
   border: 1px solid black;
   padding: 10px;
   margin: 10px;
-  background-color: white;
+  background-color: rgb(13, 12, 12);
   cursor: pointer;
 
 }
@@ -56,8 +53,8 @@ button{
   top:0px;
   background-color: white;
   color: black;
-  width:400px;
-  height:89vh
+  width:25rem;
+  height:100%;
 }
 
 input.sch{
@@ -87,48 +84,14 @@ body{
 
 
 
-.trip{
-  justify-content: center;
-  text-align: left;
-  position:absolute;
-  border: 1px solid black;
-  right: 1100px;
-  bottom: 80px;
-  background-color: white;
-  color: black;
-  border-radius: 10px;
-  width:260px;
-}
 
 h1{
   position: absolute;
   right: 899px;
 }
-.trip1{
-  justify-content: center;
-  text-align: left;
-  position:absolute;
-  border: 1px solid black;
-  right: 1100px;
-  bottom: 230px;
-  background-color: white;
-  color: black;
-  border-radius: 10px;
-  width:260px;
-}
 
-.trip2{
-  justify-content: center;
-  position:absolute;
-  text-align: left;
-  border: 1px solid black;
-  right: 1100px;
-  bottom: 380px;
-  background-color: white;
-  color: black;
-  border-radius: 10px;
-  width: 260px;
-}
+
+
 
 .info{
   text-align: left;
@@ -143,7 +106,7 @@ h1{
   display: flex;
   z-index: 2;
 }
-
+/* mapview */
 .Map{
   position: absolute;
   right: 0;
@@ -152,7 +115,80 @@ h1{
   height: 100%;
   z-index: 1;
   }
-
+  .map-view {
+    padding: 20px;
+  }
+  
+  .map-view h1 {
+    margin-bottom: 20px;
+  }
+  /*profile page*/
+  .profile {
+    padding: 20px;
+  }
+  
+  .user-info {
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .chart {
+    margin: 20px 0;
+  }
+  
+  .transactions {
+    margin-top: 20px;
+  }
+  
+  .transactions ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .transactions li {
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin: 10px 0;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+  }
+/*Dashboad*/
+  .App {
+    text-align: center;
+  }
+  
+  .dashboard {
+    padding: 20px;
+  }
+  
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .card {
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin: 10px;
+    padding: 20px;
+    width: 200px;
+  }
+  .chart {
+    border: 1px solid #271703;
+    background-color: rgb(13, 12, 12);
+    color: white;
+    padding: 4%;
+    max-height: 400px;
+    max-width: 600px;
+  }
+  
 
 
 @media only screen and (max-width: 1080px) {

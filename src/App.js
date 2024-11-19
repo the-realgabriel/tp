@@ -1,6 +1,6 @@
 import React from 'react';
 import Home from './pages/home';
-
+import "./App.css"
 import Login from './Auth/login';
 import Student from './Auth/std_reg';
 import Driver from './Auth/drv_reg';

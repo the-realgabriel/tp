@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { Line } from 'react-chartjs-2';
 import 'chart.js/auto';
-import './profile.css';
 
 const Profile = () => {
   const [userData, setUserData] = useState(null);

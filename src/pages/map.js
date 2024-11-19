@@ -1,7 +1,6 @@
 import React from 'react';
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
 import 'leaflet/dist/leaflet.css';
-import './map.css';
 import L from 'leaflet';
 
 // Fix for default marker icon issue
