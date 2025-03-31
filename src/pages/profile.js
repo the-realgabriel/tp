@@ -8,20 +8,13 @@ const Profile = () => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    // Mock data fetching - replace with actual API endpoint
+    
     axios.get('https://jsonplaceholder.typicode.com/users/1')
       .then(response => {
         const user = {
           name: response.data.name,
           walletBalance: 1234.56,
-          transactions: [
-            { id: 1, date: '2023-01-01', amount: -200 },
-            { id: 2, date: '2023-02-01', amount: 300 },
-            { id: 3, date: '2023-03-01', amount: -150 },
-            { id: 4, date: '2023-04-01', amount: -50 },
-            { id: 5, date: '2023-05-01', amount: 100 },
-            { id: 6, date: '2023-06-01', amount: -30 },
-          ]
+          transactions: []
         };
         setUserData(user);
         setLoading(false);

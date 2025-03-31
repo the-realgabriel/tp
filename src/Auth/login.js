@@ -23,11 +23,10 @@ const Login = () => {
       });
 
       if (response.data) {
-        // Store token or user data as needed
-        // Example: localStorage.setItem('authToken', response.data.token);
+
 
         alert('Login successful!');
-        // Redirect to dashboard
+        
         navigate('/dash');
       }
     } catch (err) {
@@ -45,7 +44,7 @@ const Login = () => {
           <p>Password</p>
           <input type="password" value={password} onChange={(e) => setPassword(e.target.value)} required/>
         </label>
-            <div>
+            <div className='p-10'>
                 
                     <button type="submit">submit</button>
                 
