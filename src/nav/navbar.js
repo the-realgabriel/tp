@@ -1,20 +1,18 @@
 import React, { useState } from 'react';
 
-const NavBar = ({ children }) => {
-  const [isExpanded, setIsExpanded] = useState(true);
-
-  const toggleSidebar = () => {
-    setIsExpanded(!isExpanded);
-  };
-
-  const sidebarClass = `side-nav ${isExpanded ? 'expanded' : ''}`;
-
+function NavBar() {
+  
   return (
-    <div className={sidebarClass}>
-      <button onClick={toggleSidebar} className="toggle-btn">
-      </button>
-      <nav>{children}</nav>
+    <>
+    <div className="navBar">
+      <h1>Commute</h1>
+      <ul>
+        <li>Log in</li>
+        <li>Sign up</li>
+      </ul>
     </div>
+
+    </>
   );
 };
 
